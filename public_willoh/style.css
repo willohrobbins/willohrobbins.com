@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "elegant";
+  src: url("fonts/elegant.otf");
+}
+
+::selection {
+background-color: lightpink;
+color: white;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'elegant', serif;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation nav ul {
+  list-style: none;
+  text-align: right;
+}
+
+.navigation nav ul li {
+  display: inline-block;
+  width: 8rem;
+  height: 3rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.navigation nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.navigation nav ul li a:hover {
+  transform: scale(1.15); /* Enlarges text on hover */
+  transform-origin: center; /* Ensures scaling happens from the center */
+}
+
+.contentgrid {
+  display: flex;
+  flex-direction: row;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+.information {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+#about {
+  background-color: lightpink;
+  outline: 0.15rem solid black;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+#projects {
+  background-color: lightpink;
+  outline: 0.15rem solid black;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+#skills {
+  background-color: lightpink;
+  outline: 0.15rem solid black;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
